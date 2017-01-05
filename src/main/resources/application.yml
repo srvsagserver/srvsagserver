@@ -1,0 +1,17 @@
+spring:
+    main:
+        banner-mode: "off"
+    profiles:
+        default: DEV
+
+environments:
+    dev:
+        db.server:
+            url: jdbc:mysql://localhost:3306/srvcdb_test?useSSL=false
+            username: developer
+            password: developer
+    prod:
+        db.server:
+            url: jdbc:mysql://localhost:3306/srvcdb?useSSL=false
+            username: developer
+            password: developer
