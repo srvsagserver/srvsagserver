@@ -8,3 +8,11 @@ the project (in Idea -> Ctrl+F9).
 
 #### Additional info
 http://docs.spring.io/autorepo/docs/spring-boot/current/reference/htmlsingle/
+
+## UI
+### Start
+To start UI navigate to 'client' folder and run: <br>
+
+- npm install - to install all dependencies as node 
+- npm run build-js - to build js modules (NODE_ENV=production webpack, to make it min)
+- npm start - to start the project locally on http://localhost:8080/
