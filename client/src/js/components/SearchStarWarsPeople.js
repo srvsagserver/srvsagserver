@@ -1,6 +1,6 @@
 import React from 'react';
 
-class App extends React.Component {
+class SearchStarWarsPeople extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -36,11 +36,11 @@ class App extends React.Component {
         return (
             <div>
                 <input type="text"
-                onChange={this.filter.bind(this)}/>
+                       onChange={this.filter.bind(this)}/>
                 {items.map(item => <h4 key={item.name}>{item.name}</h4>) }
             </div>
         )
     }
 }
 
-export default App;
+export default SearchStarWarsPeople;
