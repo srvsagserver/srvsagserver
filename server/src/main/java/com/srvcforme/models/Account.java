@@ -1,11 +1,7 @@
 package com.srvcforme.models;
 
 import javax.persistence.*;
-import java.util.Objects;
 
-/**
- * created by Vadym Zdoryk 17/01/2017
- */
 @Entity
 @Table(name = "accounts", schema = "", catalog = "srvcdb")
 public class Account {
@@ -60,7 +56,7 @@ public class Account {
 
     @Override
     public int hashCode() {
-        int result = Objects.hashCode(id);
+        int result = (int) (id ^ (id >>> 32));
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (isCompany != null ? isCompany.hashCode() : 0);
         return result;
